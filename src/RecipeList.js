@@ -1,5 +1,6 @@
 import React from "react";
 import RecipeRead from "./RecipeRead";
+import "./App.css";
 
 function RecipeList({ deleteRecipe, recipes }) {
   // TODO: Display the list of recipes using the structure of table that is provided.
@@ -11,7 +12,6 @@ function RecipeList({ deleteRecipe, recipes }) {
       <table>
         <thead>
           <tr>
-            <th></th>
             <th>Name</th>
             <th>Cuisine</th>
             <th>Photo</th>

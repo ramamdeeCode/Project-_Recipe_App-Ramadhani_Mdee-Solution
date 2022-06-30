@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 
 function RecipeRead({ deleteRecipe, recipes }) {
   return recipes.map(
@@ -9,8 +10,12 @@ function RecipeRead({ deleteRecipe, recipes }) {
         <td>
           <img src={photo} />
         </td>
-        <td>{ingredients}</td>
-        <td>{preparation}</td>
+        <td className="content_td">
+          <p>{ingredients}</p>
+        </td>
+        <td className="content_td">
+          <p>{preparation}</p>
+        </td>
         <td>
           <button name="delete" onClick={() => deleteRecipe(index)}>
             Delete
