@@ -15,6 +15,9 @@ function App() {
   };
 
   // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
+  const createRecipe = (newRecipe) => {
+    setRecipes([newRecipe, ...recipes]);
+  };
 
   return (
     <div className="App">
@@ -22,7 +25,7 @@ function App() {
         <h1>Delicious Food Recipes</h1>
       </header>
       <RecipeList deleteRecipe={deleteRecipe} recipes={recipes} />
-      <RecipeCreate />
+      <RecipeCreate createRecipe={createRecipe} />
     </div>
   );
 }
