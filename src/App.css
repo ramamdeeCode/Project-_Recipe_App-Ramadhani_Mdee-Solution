@@ -16,7 +16,7 @@ img {
 tr:nth-child(odd){
   background-color: #fff0c7;
 }
-.content_td:nth-child(1):nth-child(2){
+.content_td p:nth-child(1):nth-child(2){
   width: 30%;
 }
 label {
